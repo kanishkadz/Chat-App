@@ -1,3 +1,4 @@
+import 'package:chat_app/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -31,7 +32,16 @@ class LoginPage extends StatelessWidget {
 
             const SizedBox(height: 25),
         
-            //email verified
+            //email textfield
+            MyTextField(
+              hintText: "Email",
+            ),
+            
+            const SizedBox(height: 10),
+
+            MyTextField(
+              hintText: "Password",
+            ),
         
             //pw textfield
         
