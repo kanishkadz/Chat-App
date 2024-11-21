@@ -7,22 +7,39 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          //logo
-          Icon(Icons.message),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            //logo
+            Icon(
+              Icons.message,
+              size: 60,
+              color: Theme.of(context).colorScheme.primary,
+            ),
 
-          //welcome back message
+            const SizedBox(height: 50),
+        
+            //welcome back message
+            Text(
+              "Welcome back, we missed you !!",
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.primary,
+                fontSize: 16,
+                ),
+            ),
 
-          //email verified
-
-          //pw textfield
-
-          //login button
-
-          //register now
-        ],
+            const SizedBox(height: 25),
+        
+            //email verified
+        
+            //pw textfield
+        
+            //login button
+        
+            //register now
+          ],
+        ),
       ),
     );
   }
