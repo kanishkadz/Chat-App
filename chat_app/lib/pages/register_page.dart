@@ -78,8 +78,8 @@ class RegisterPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Not a member?", style: TextStyle(color: Theme.of(context).colorScheme.primary),),
-                Text(" Register now", style: TextStyle(fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.primary),)
+                Text("Already have an account?", style: TextStyle(color: Theme.of(context).colorScheme.primary),),
+                Text(" Login now", style: TextStyle(fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.primary),)
               ],
             )
           ],
