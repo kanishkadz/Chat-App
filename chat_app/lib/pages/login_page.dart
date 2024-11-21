@@ -3,11 +3,15 @@ import 'package:chat_app/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-
   //email and pw text controller
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _pwController = TextEditingController();
   LoginPage({super.key});
+
+  //login method
+  void login() {
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -60,8 +64,18 @@ class LoginPage extends StatelessWidget {
               text: "Login",
               onTap: login,
             ),
+
+            const SizedBox(height: 25),
         
             //register now
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Not a member?"),
+                Text(" Register now", style: TextStyle(fontWeight: FontWeight.bold),)
+              ],
+            )
           ],
         ),
       ),
