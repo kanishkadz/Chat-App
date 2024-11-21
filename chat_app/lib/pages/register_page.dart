@@ -5,7 +5,11 @@ import 'package:flutter/material.dart';
 class RegisterPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _pwController = TextEditingController();
+  final TextEditingController _confirmpwController = TextEditingController();
   RegisterPage({super.key});
+
+  //register
+  void register() {}
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +30,7 @@ class RegisterPage extends StatelessWidget {
         
             //welcome back message
             Text(
-              "Welcome back, we missed you !!",
+              "Create a New Account",
               style: TextStyle(
                 color: Theme.of(context).colorScheme.primary,
                 fontSize: 16,
@@ -51,18 +55,26 @@ class RegisterPage extends StatelessWidget {
               controller: _pwController,
             ),
 
+            //confirmpw textfield
+            MyTextField(
+              hintText: "Confirm Password",
+              obscureText: false,
+              controller: _confirmpwController,
+            ),
+
+            const SizedBox(height: 10),
+
             const SizedBox(height: 25),
         
             //login button
             MyButton(
-              text: "Login",
-              onTap: login,
+              text: "Register",
+              onTap: register,
             ),
 
             const SizedBox(height: 25),
         
             //register now
-
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
