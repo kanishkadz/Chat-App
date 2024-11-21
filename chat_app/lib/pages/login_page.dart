@@ -9,4 +9,4 @@ class LoginPage extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.background,
     );
   }
-},
+}
