@@ -2,16 +2,10 @@ import 'package:chat_app/components/my_button.dart';
 import 'package:chat_app/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
-  //email and pw text controller
+class RegisterPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _pwController = TextEditingController();
-  LoginPage({super.key});
-
-  //login method
-  void login() {
-
-  }
+  RegisterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
