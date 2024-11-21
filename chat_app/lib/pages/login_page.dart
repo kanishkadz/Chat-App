@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   //email and pw text controller
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _pwController = TextEditingController();
-  const LoginPage({super.key});
+  LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,6 +58,7 @@ class LoginPage extends StatelessWidget {
             //login button
             MyButton(
               text: "Login",
+              onTap: login,
             ),
         
             //register now
