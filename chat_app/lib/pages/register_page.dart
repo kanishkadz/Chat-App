@@ -60,6 +60,8 @@ class RegisterPage extends StatelessWidget {
               controller: _pwController,
             ),
 
+            const SizedBox(height: 10),
+
             //confirmpw textfield
             MyTextField(
               hintText: "Confirm Password",
@@ -67,7 +69,6 @@ class RegisterPage extends StatelessWidget {
               controller: _confirmpwController,
             ),
 
-            const SizedBox(height: 10),
 
             const SizedBox(height: 25),
         
