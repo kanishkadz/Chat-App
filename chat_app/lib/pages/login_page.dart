@@ -2,6 +2,10 @@ import 'package:chat_app/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
+
+  //email and pw text controller
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _pwController = TextEditingController();
   const LoginPage({super.key});
 
   @override
@@ -36,6 +40,7 @@ class LoginPage extends StatelessWidget {
             MyTextField(
               hintText: "Email",
               obscureText: false,
+              controller: _emailController,
             ),
 
             const SizedBox(height: 10),
@@ -43,6 +48,7 @@ class LoginPage extends StatelessWidget {
             MyTextField(
               hintText: "Password",
               obscureText: true,
+              controller: _pwController,
             ),
         
             //pw textfield
