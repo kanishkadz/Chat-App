@@ -1,3 +1,4 @@
+import 'package:chat_app/components/my_button.dart';
 import 'package:chat_app/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 
@@ -55,6 +56,7 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 25),
         
             //login button
+            MyButton(),
         
             //register now
           ],
