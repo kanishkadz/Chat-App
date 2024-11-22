@@ -30,3 +30,4 @@ buildscript {
         classpath 'com.google.gms:google-services:4.4.2' // Add the plugin as a classpath dependency
     }
 }
+ 
