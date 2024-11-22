@@ -1,3 +1,5 @@
+// Root level build.gradle file
+
 allprojects {
     repositories {
         google()
@@ -6,13 +8,25 @@ allprojects {
 }
 
 rootProject.buildDir = "../build"
+
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
+    // Ensures app module is evaluated before others if needed
     project.evaluationDependsOn(":app")
 }
 
+// Register the clean task
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
+}
+
+// Add the Google Services plugin here as part of the buildscript
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.2' // Add the plugin as a classpath dependency
+    }
 }
